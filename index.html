@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Vitamed - Clínica de Ginecologia e Obstetrícia">
+    <meta property="og:image" content="https://cardapio-ivory.vercel.app/src/img/hamb-1.png">
+    <meta property="og:description" content="Clínica especializada em Ginecologia e Obstetrícia">
+    <meta property="og:site_name" content="Vitamed">
+
+    <link rel="stylesheet" href="./src/css/output.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" 
+    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+    <title>Vitamed</title>
+
+</head>
+<body>
+    <header class="fixed w-full top-0 left-0 z-[99] bg-[#F8F8F8]">
+        <nav class="flex items-center justify-between px-6 md:px-10 py-4">
+            <a href="#">
+                <img src="./src/img/logo.png" alt="logo-clinica" loading="lazy" width="170px" height="30px">
+            </a>
+
+            <div class="block lg:hidden items-center justify-center">
+                <button class="flex items-center justify-center" onclick="openNav()">
+                    <i class="fa fa-bars text-xl"></i>
+                </button>
+            </div>
+
+            <div class="hidden lg:flex lg:items-center lg:justify-center lg:gap-12 lg:text-lg text-zinc-800 font-semibold">
+                <a class="duration-200 hover:text-black hover:scale-105" href="#about">Sobre</a>
+                <a class="duration-200 hover:text-black hover:scale-105" href="#services">Serviços</a>
+                <a class="duration-200 hover:text-black hover:scale-105" href="#team">Equipe</a>
+                <a class="duration-200 hover:text-black hover:scale-105" href="#contact">Contato</a>
+            </div>
+        </nav>
+
+        <nav id="nav-mobile" class="lg:hidden hidden fixed top-0 right-0 h-screen max-w-full duration-200 md:max-w-72 
+        py-6 px-6 md:px-10 z-[99] bg-[#F8F8F8]">
+            <div class="flex flex-col gap-16">
+                <div class="flex items-center justify-end">
+                    <button class="flex items-center justify-center" onclick="closeNav()">
+                        <i class="fa fa-close text-2xl"></i>
+                    </button>
+                </div>
+                <div class="h-full w-full flex flex-col items-center gap-6 text-lg text-zinc-800 font-semibold">
+                    <a class="duration-200 hover:text-black hover:scale-105" href="#about">Sobre</a>
+                    <a class="duration-200 hover:text-black hover:scale-105" href="#services">Serviços</a>
+                    <a class="duration-200 hover:text-black hover:scale-105" href="#team">Equipe</a>
+                    <a class="duration-200 hover:text-black hover:scale-105" href="#contact">Contato</a> 
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="relative overflow-hidden w-full h-screen">
+        <div class="carousel-item w-full h-screen bg-bgImage1 bg-cover bg-center">
+            <div class="flex flex-col items-center md:ml-24 md:items-start justify-center w-full h-screen mt-8 gap-4 md:gap-8 text-center md:text-start">
+                <div class="relative flex flex-col w-3/4 gap-8 text-white z-20 animate-enterHome">
+                    <h1 class="text-3xl md:text-4xl font-semibold">Atendimento Personalizado</h1>
+                    <p class="hidden md:flex">Oferecemos um atendimento obstétrico personalizado e compassivo, garantindo que cada gestante 
+                        receba o cuidado individualizado de que precisa durante a gestação, parto e pós-parto.
+                    </p>
+                </div>
+                <div class="md:hidden relative h-0.5 w-40 bg-[#0741AD] z-20 animate-enterHome"></div>
+                <button class="relative bg-[#0741AD] rounded-lg flex items-center z-20 justify-center animate-enterHome 
+                duration-200 hover:bg-[#0731AA]">
+                    <a href="#services" class="rounded-lg px-4 py-1 text-white font-semibold text-base md:text-lg">Ver Serviços</a>
+                </button>
+            </div>
+        </div>
+
+        <div class="carousel-item w-full h-screen bg-bgImage2 bg-cover bg-center">
+            <div class="flex flex-col items-center md:ml-24 md:items-start justify-center w-full h-screen mt-8 gap-4 md:gap-8 text-center md:text-start">
+                <div class="relative flex flex-col w-3/4 gap-8 text-white z-20 animate-enterHome">
+                    <h1 class="text-3xl md:text-4xl font-semibold">Equipe Especializada</h1>
+                    <p class="hidden md:flex">Nossa equipe é composta por obstetras e profissionais de saúde altamente qualificados e 
+                        experientes, dedicados a proporcionar a melhor assistência obstétrica possível, com foco na 
+                        saúde e bem-estar da mãe e do bebê.
+                    </p>
+                </div>
+                <div class="md:hidden relative h-0.5 w-40 bg-[#0741AD] z-20 animate-enterHome"></div>
+                <button class="relative bg-[#0741AD] rounded-lg flex items-center z-20 justify-center animate-enterHome 
+                duration-200 hover:bg-[#0731AA]">
+                    <a href="#team" class="rounded-lg px-4 py-1 text-white font-semibold text-base md:text-lg">Ver Equipe</a>
+                </button>
+            </div>
+        </div>
+
+        <div class="carousel-item w-full h-screen bg-bgImage3 bg-cover bg-center">
+            <div class="flex flex-col items-center md:ml-24 md:items-start justify-center w-full h-screen mt-8 gap-4 md:gap-8 text-center md:text-start">
+                <div class="relative flex flex-col w-3/4 gap-8 text-white z-20 animate-enterHome">
+                    <h1 class="text-3xl md:text-4xl font-semibold">Tecnologia de Ponta</h1>
+                    <p class="hidden md:flex">Utilizamos tecnologia de ponta em todas as etapas do acompanhamento obstétrico, desde exames de 
+                        ultrassom avançados até técnicas de monitoramento fetal, garantindo uma gravidez segura e 
+                        tranquila para nossas pacientes.
+                    </p>
+                </div>
+                <div class="md:hidden relative h-0.5 w-40 bg-[#0741AD] z-20 animate-enterHome"></div>
+                <button class="relative bg-[#0741AD] rounded-lg flex items-center z-20 justify-center animate-enterHome 
+                duration-200 hover:bg-[#0731AA]">
+                    <a href="#services" class="rounded-lg px-4 py-1 text-white font-semibold text-base md:text-lg">Ver Serviços</a>
+                </button>
+            </div>
+        </div>
+
+        <div class="bg-black/75 z-10 absolute top-0 left-0 h-screen w-full"></div>
+
+        <button id="prevBtn" class="absolute z-20 left-0 top-[52.5%] text-white ml-3 md:ml-5 text-2xl md:text-3xl duration-200
+        hover:scale-125 focus:scale-125" onclick="prevSlide()">&#10094;</button>
+        <button id="nextBtn" class="absolute z-20 right-0 top-[52.5%] text-white mr-3 md:mr-5 text-2xl md:text-3xl duration-200
+        hover:scale-125 focus:scale-125" onclick="nextSlide()">&#10095;</button>
+    </section>
+
+    <section id="about" class="w-full h-screen flex flex-col items-center justify-center px-8 md:px-12 gap-14">
+        <div class="flex flex-col text-center items-center justify-center gap-2 max-w-2xl w-full">
+            <h1 class="text-3xl font-semibold">Sobre Nós</h1>
+            <p class="hidden md:block text-lg">Sua jornada pela gravidez em mãos experientes e acolhedoras.</p>
+        </div>
+
+        <div class="flex flex-col md:flex-row justify-center items-center gap-10 max-w-6xl">
+            <div>
+                <img src="./src/img/bg-about.webp" alt="img-about" loading="lazy" class="w-[900px]">
+            </div>
+
+            <div class="flex flex-col text-center md:text-start items-center justify-center gap-6 w-full">
+                <h1 class="font-semibold text-lg">Conheça <span class="text-[#0731AA]">Nossa Missão</span>: 
+                    Compromisso com Cuidado Personalizado e Excelência</h1>
+                <div class="flex flex-col gap-4">
+                    <p class="text-sm">Na Vitamed, oferecemos uma experiência excepcional com cuidado personalizado. 
+                        Nossa equipe une expertise médica e compaixão para tornar sua gravidez tranquila e memorável.
+                    </p>
+                    <p class="text-sm">
+                        Cada gestante recebe um cuidado personalizado, com suporte e orientação de qualidade para você e 
+                        seu bebê. Estamos aqui para oferecer os melhores cuidados médicos.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="flex flex-col items-center justify-center py-12 px-6 md:py-16 md:px-8 gap-8 bg-[#fffaf0]">
+        <div class="flex flex-col text-center justify-center items-center gap-2 w-full max-w-2xl">
+            <h1 class="text-3xl font-semibold">Serviços</h1>
+            <p class="hidden md:block">Explore <span class="text-[#0731AA]">nossos serviços</span> para uma gravidez 
+                tranquila e saudável.</p>
+        </div>
+
+        <div class="flex flex-col gap-8 md:grid md:grid-cols-2 md:gap-8">
+            <div class="bg-[#F5F5F5] p-4 rounded-lg flex flex-col gap-6 items-start drop-shadow-3xl
+            hover:bg-blue-800/75 hover:text-white duration-300">
+                <div class="w-full flex justify-between">
+                    <div class="bg-blue-100 p-2 rounded-lg">
+                        <img src="./src/img/uterus.webp" alt="icon-gineco" width="32px">
+                    </div>
+                    <img src="./src/img/icon-health.svg" alt="icon-health">
+                </div>
+                <div class="flex flex-col gap-3">
+                    <h1 class="font-semibold text-xl">Consulta Ginecológica e Pré-Natal</h1>
+                    <p>Cuidado com foco na saúde ginecológica e no acompanhamento pré-natal, garantindo uma gravidez 
+                        saudável.</p>
+                </div>
+            </div>
+
+            <div class="bg-[#F5F5F5] p-4 rounded-lg flex flex-col gap-6 items-start drop-shadow-3xl
+            hover:bg-blue-800/75 hover:text-white duration-300">
+                <div class="w-full flex justify-between">
+                    <div class="bg-blue-100 p-2 rounded-lg">
+                        <img src="./src/img/batimento-cardiaco.webp" alt="icon-ultra" width="32px">
+                    </div>
+                    <img src="./src/img/icon-health.svg" alt="icon-health">
+                </div>
+                <div class="flex flex-col gap-3">
+                    <h1 class="font-semibold text-xl">Ultrassonografia Obstétrica</h1>
+                    <p>Exames para acompanhar o desenvolvimento fetal e detectar qualquer preocupação precocemente, 
+                        assegurando tranquilidade para você e seu bebê.</p>
+                </div>
+            </div>
+
+            <div class="bg-[#F5F5F5] p-4 rounded-lg flex flex-col gap-6 items-start drop-shadow-3xl
+            hover:bg-blue-800/75 hover:text-white duration-300">
+                <div class="w-full flex justify-between">
+                    <div class="bg-blue-100 p-2 rounded-lg">
+                        <img src="./src/img/gravida.webp" alt="icon-gravida" width="32px">
+                    </div>
+                    <img src="./src/img/icon-health.svg" alt="icon-health">
+                </div>
+                <div class="flex flex-col gap-3">
+                    <h1 class="font-semibold text-xl">Curso de Preparação para o Parto</h1>
+                    <p>Workshops para prepará-la para o parto, com técnicas de respiração e exercícios, promovendo uma 
+                        transição suave para a maternidade.</p>
+                </div>
+            </div>
+
+            <div class="bg-[#F5F5F5] p-4 rounded-lg flex flex-col gap-6 items-start drop-shadow-3xl
+            hover:bg-blue-800/75 hover:text-white duration-300">
+                <div class="w-full flex justify-between">
+                    <div class="bg-blue-100 p-2 rounded-lg">
+                        <img src="./src/img/bebe-colo.webp" alt="icon-pos-parto" width="32px">
+                    </div>
+                    <img src="./src/img/icon-health.svg" alt="icon-health">
+                </div>
+                <div class="flex flex-col gap-3">
+                    <h1 class="font-semibold text-xl">Acompanhamento Pós-Parto</h1>
+                    <p>Suporte após o parto, com consultas de acompanhamento, orientação sobre amamentação e 
+                        cuidados para você e seu bebê.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="team" class="w-full flex flex-col items-center justify-center px-8 md:px-12 gap-8">
+        <div class="flex flex-col text-center items-center justify-center gap-2 w-full max-w-2xl">
+            <h1 class="text-3xl font-semibold">Nossa Equipe</h1>
+            <p class="hidden md:block text-sm">Conheça nossa equipe de especialistas dedicados, prontos para oferecer cuidados excepcionais e apoio 
+                compassivo em cada etapa da sua jornada obstétrica.</p>
+        </div>
+
+        <div class="flex flex-col md:grid md:grid-cols-2 lg:grid-cols-3 items-center justify-center gap-8">
+            <div class="bg-gray-200/50 rounded-md flex flex-col items-center text-center justify-center gap-4">
+                <img src="./src/img/perfil-img-1.webp" alt="lucas-pereira-img" loading="lazy" class="rounded-t-md w-full">
+                <h1 class="text-2xl font-semibold w-3/4">Dr. Lucas Pereira</h1>
+                <div class="h-0.5 bg-[#0731AA] w-3/4"></div>
+                <div class="flex gap-6 mb-4">
+                    <a href="#" class="text-3xl md:text-2xl hover:text-[#0731AA] hover:scale-105 focus:scale-105 
+                    duration-150" target="_blank" rel="noopener noreferer" aria-label="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#" class="text-3xl md:text-2xl hover:text-[#0731AA] hover:scale-105 focus:scale-105 
+                    duration-150" target="_blank" rel="noopener noreferer" aria-label="facebook">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="bg-gray-200/50 rounded-md flex flex-col items-center text-center justify-center gap-4">
+                <img src="./src/img/perfil-img-2.webp" alt="amanda-santps-img" loading="lazy" class="rounded-t-md w-full">
+                <h1 class="text-2xl font-semibold w-3/4">Dra. Amanda Santos</h1>
+                <div class="h-0.5 bg-[#0731AA] w-3/4"></div>
+                <div class="flex gap-6 mb-4">
+                    <a href="#" class="text-3xl md:text-2xl hover:text-[#0731AA] hover:scale-105 focus:scale-105 
+                    duration-150" target="_blank" rel="noopener noreferer" aria-label="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#" class="text-3xl md:text-2xl hover:text-[#0731AA] hover:scale-105 focus:scale-105 
+                    duration-150" target="_blank" rel="noopener noreferer" aria-label="facebook">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="bg-gray-200/50 rounded-md flex flex-col items-center text-center justify-center gap-4">
+                <img src="./src/img/perfil-img-3.webp" alt="carolina-oliveira-img" loading="lazy" class="rounded-t-md w-full">
+                <h1 class="text-2xl font-semibold w-3/4">Dra. Carolina Oliveira</h1>
+                <div class="h-0.5 bg-[#0731AA] w-3/4"></div>
+                <div class="flex gap-6 mb-4">
+                    <a href="#" class="text-3xl md:text-2xl hover:text-[#0731AA] hover:scale-105 focus:scale-105 
+                    duration-150" target="_blank" rel="noopener noreferer" aria-label="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#" class="text-3xl md:text-2xl hover:text-[#0731AA] hover:scale-105 focus:scale-105 
+                    duration-150" target="_blank" rel="noopener noreferer" aria-label="facebook">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="w-full h-full bg-bgImageContact bg-cover bg-no-repeat bg-center mb-0">
+        <div class="w-full h-full p-5 py-10 flex flex-col lg:grid lg:grid-cols-2 lg:h-screen items-center justify-center gap-16 bg-black/65">
+            <div class="text-white flex flex-col gap-2 w-full">
+                <p class="text-sm">ENTRE EM CONTATO CONOSCO</p>
+                <h1 class="text-3xl font-semibold">Informações de Contato</h1>
+                <p class="text-sm">Na Vitamed, estamos sempre prontos para garantir tratamentos adequados para uma gravidez saudável e 
+                    uma vida de bem-estar para você e seu bebê.
+                </p>
+                <div class="flex flex-col mt-4 gap-2">
+                    <h2 class="font-semibold text-xl">Endereço</h2>
+                    <p>Av. Afrânio de Melo Franco, 290 - Leblon, Rio de Janeiro - RJ, 22430-060</p>
+
+                    <h2 class="font-semibold text-xl">E-mail</h2>
+                    <div>
+                        <a href="mailto:exemplo@gmail.com" class="hover:text-[#b2c6ec] focus:outline-white duration-200" 
+                        target="_blank" rel="noopener noreferer">exemplo@gmail.com</a>
+                    </div>
+
+                    <h2 class="font-semibold text-xl">Telefone</h2>
+                    <p>(21) 3857-5309</p>
+                </div>
+            </div>
+
+            <div class="text-white flex flex-col gap-4 w-full">
+                <h1 class="font-semibold text-3xl">Enviar Mensagem</h1>
+                <p class="text-sm">A Vitamed está sempre pronta para garantir uma gravidez saudável e uma vida tranquila para você e 
+                    seu bebê.
+                </p>
+                <div class="flex flex-col gap-2 justify-center">
+                    <input type="text" name="txtname" id="txtname" placeholder="Digite seu nome" required
+                    class="p-1 border-solid border-gray-400 border-[1px] rounded focus:outline-[#0731AA]">
+                    <input type="email" name="txtemail" id="txtemail" placeholder="Digite seu E-mail" required
+                    class="p-1 border-solid border-gray-400 border-[1px] rounded focus:outline-[#0731AA]">
+                    <input type="tel" name="txtphone" id="txtnphone" placeholder="Digite seu telefone" required
+                    class="p-1 border-solid border-gray-400 border-[1px] rounded focus:outline-[#0731AA]">
+                    <textarea name="txtarea" id="txtarea" cols="30" rows="5" placeholder="Escreva sua mensagem aqui"
+                    class="p-1 border-solid border-gray-400 border-[1px] rounded focus:outline-[#0731AA]
+                    w-full max-h-52 overflow-y-scroll"></textarea>
+                </div>
+                <button class="bg-[#0741AD] rounded-md p-2 md:w-[40%] hover:bg-[#0731AA] duration-200 
+                focus:outline-white">Enviar Mensagem</button>
+            </div>
+        </div>
+    </section>
+
+    <iframe class="w-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1836.5619632085277!2d-43.21623128890713!3d-22.982469971892666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bd5a9116b33af%3A0x7695a7dc0c0dc4a8!2sShopping%20Leblon!5e0!3m2!1spt-BR!2sbr!4v1713979964294!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <footer class="bg-[#fffaf0] w-full h-full p-8 flex flex-col gap-8">
+        <div class="flex flex-col w-full gap-8 lg:flex-row">
+            <div class="flex flex-col gap-4 w-full">
+                <img src="./src/img/logo.png" alt="logo-clinica" loading="lazy" width="170px" height="30px">
+                <p>A Vitamed está aqui para assegurar uma gestação saudável e uma jornada tranquila para você e seu bebê.</p>
+                <div class="flex gap-4 text-white items-center text-center">
+                    <a href="#" class="rounded-full" target="_blank" rel="noopener noreferer">
+                        <i class="fa-brands fa-instagram rounded-full instaBg w-7 p-1.5 hover:-translate-y-1 duration-200" 
+                        aria-label="instagram"></i>
+                    </a>
+                    <a href="#" class="rounded-full" target="_blank" rel="noopener noreferer">
+                        <i class="fa-brands fa-facebook rounded-full bg-[#3b5998] w-7 p-1.5 hover:-translate-y-1 
+                        duration-200" aria-label="facebook"></i>
+                    </a>
+                    <a href="#" class="rounded-full" target="_blank" rel="noopener noreferer">
+                        <i class="fa-brands fa-linkedin-in rounded-full bg-[#0e76a8] w-7 p-1.5 hover:-translate-y-1 
+                        duration-200" aria-label="linkedin"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row gap-8 w-full">
+                <div class="flex flex-col gap-3 w-full">
+                    <h1 class="font-semibold text-3xl">Clínica</h1>
+                    <div class="flex flex-col gap-2 items-start">
+                        <a href="#about" class="hover:text-[#0741AA] duration-200 text-lg">Sobre Nós</a>
+                        <a href="#services" class="hover:text-[#0741AA] duration-200 text-lg">Serviços</a>
+                        <a href="#team" class="hover:text-[#0741AA] duration-200 text-lg">Equipe</a>
+                        <a href="#contact" class="hover:text-[#0741AA] duration-200 text-lg">Contato</a>
+                    </div>
+                </div>
+
+                <div class="flex flex-col gap-4 w-full">
+                    <h1 class="font-semibold text-3xl">Informações de Contato</h1>
+                    <p>Av. Afrânio de Melo Franco, 290 - Leblon, Rio de Janeiro - RJ, 22430-060</p>
+                    <div>
+                        <a href="mailto:exemplo@gmail.com" class="hover:text-[#0741AA] duration-200" target="_blank" 
+                        rel="noopener noreferer">exemplo@gmail.com</a>
+                    </div>
+                    <p>(21) 3857-5309</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="h-[0.5px] bg-black/75 w-full rounded"></div>
+
+        <p class="text-center">VitaMed &copy; 2024 - Todos os Direitos Reservados</p>
+    </footer>
+
+    <script src="./src/scripts/script.js" defer></script>
+</body>
+</html>
