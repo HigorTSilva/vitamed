@@ -7,6 +7,10 @@ module.exports = {
         "3xl": "0 0 10px rgba(0,0,0,.1)",
       },
 
+      boxShadow: {
+        "navbarShadow": "0 4px 8px rgba(98,98,98,.25)",
+      },
+
       animation: {
         enterHome: "enterHome 1s ease-in-out",
         navIn: "navIn 1s ease-in-out"

@@ -1,3 +1,10 @@
+const navbar = document.getElementById("navbar");
+
+window.addEventListener('scroll', function () {
+  if (this.window.scrollY > 0) return navbar.classList.add('shadow-navbarShadow');
+  return navbar.classList.remove('shadow-navbarShadow');
+});
+
 let slideIndex = 0;
 showSlide(slideIndex);
 
