@@ -10,7 +10,7 @@
 
 ## 📸 Preview
 
-![Hero](./.github/imagem-vitamed.png)
+![Hero](https://github.com/HigorTSilva/vitamed/blob/main/imagem-vitamed.png)
 
 ---
 
